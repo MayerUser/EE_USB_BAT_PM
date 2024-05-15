@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This is a simple source hardware project, USB-BATTERY, for low power application with battery. It supports dual power supplies, battery supply, battery charging, and low power management.
+This is a straightforward open-source hardware project, USB-BATTERY, designed for low-power applications with a battery. It features dual power supply capabilities, including battery supply and charging, as well as advanced low-power management.
 
 ## User Mannal
 
 ![The product of USB-BATTERY](./Figure/USB_BAT.jpg)
 
-As is shownd in the above figure, the USB-BATTERY is a small power module which can be moounted onto the bread board. The following is the blocks or ports defination of the module:
+As shown in the figure above, the USB-BATTERY is a compact power module that can be mounted onto a breadboard. Below is the definition of the blocks or ports of the module:
 
 1. **PWE_1**: Power Input 1 with USB TYPE C socket (Support PD Charging);
 2. **PWR_2**: Power Input 2 with 2.54mm Header;
@@ -30,21 +30,25 @@ The following link is schematic(.pdf) for the project.
 ### PWR_1
 
 ![PWR1](./Figure/PWR1.png)
+
 R1 and R2 are used for PD Charging identification;
 
 ### PWR_2
 
 ![PWR2](./Figure/PWR2.png)
+
 Power input port 2 with reverse connection protection;
 
 ### Power MUX
 
 ![PWR_MUX](./Figure/PWR_MUX.png)
+
 Power Multiplex which guarteen only one power supply input vaild at the same time;
 
 ### ON/OFF Control
 
 ![ON_OFF](./Figure/ON_OFF.png)
+
 Low Power Switch Control which is triggered by the falling edge of Enable siganl.
 
 ### Boost Converter
@@ -56,8 +60,8 @@ Boost the voltage to 5V with battery supply.
 ### Battery Charger
 
 ![charger](./Figure/battery.png)
-Linear Battery Charger;
 
+Linear Battery Charger;
 
 ## BOM
 
